@@ -2,14 +2,15 @@
 
 ## Features
 
-- [ ] GraphQL with Apollo Client
-- [ ] Tailwind CSS
+- [x] GraphQL with Apollo Client
+- [x] Tailwind CSS
+- [ ] Tests with Cypress
+
+### Extras
+
 - [ ] Filter by state
 - [ ] Search by name and/or id
 - [ ] Pagination between cards
-- [ ] Navigation (effect) on mouse cards
-- [ ] Page Intern with more details from mission
-- [ ] Tests with Cypress
 
 ## References
 
