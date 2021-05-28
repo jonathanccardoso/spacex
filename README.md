@@ -4,10 +4,11 @@
 
 - [x] GraphQL with Apollo Client
 - [x] Tailwind CSS
-- [X] Tests with Cypress
+- [x] Tests with Cypress
 
 ### Extras
 
+- [x] Loading animations
 - [ ] Filter by state
 - [ ] Search by mission name
 - [ ] Pagination between cards

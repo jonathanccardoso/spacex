@@ -1,7 +1,11 @@
 import { useQuery, gql } from "@apollo/client";
 
+import Shimmer from "react-shimmer-effect";
+
 import { format, parseISO } from "date-fns";
 import ptBR from "date-fns/locale/pt-BR";
+
+import "./styles.css";
 
 const LAUNCHES_PAST = gql`
   query GetLaunchesPast {
@@ -22,8 +26,35 @@ const LAUNCHES_PAST = gql`
 function App() {
   const { loading, error, data } = useQuery(LAUNCHES_PAST);
 
-  // FIXME: adds components animated loading
-  if (loading) return <p>Loading...</p>;
+  if (loading)
+    return (
+      <>
+        <div className="containerDiv">
+          <Shimmer>
+            <div className="circle" />
+            <div className="line" />
+          </Shimmer>
+        </div>
+        <div className="containerDiv">
+          <Shimmer>
+            <div className="line" />
+            <div className="line" />
+          </Shimmer>
+        </div>
+        <div className="containerDiv">
+          <Shimmer>
+            <div className="line" />
+            <div className="line" />
+          </Shimmer>
+        </div>
+        <div className="containerDiv">
+          <Shimmer>
+            <div className="line" />
+            <div className="line" />
+          </Shimmer>
+        </div>
+      </>
+    );
   if (error) return <p>Error :(</p>;
 
   return (

@@ -1,0 +1,22 @@
+.containerDiv {
+  border-radius: 4px;
+  background-color: white;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.circle {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.line {
+  width: 50rem;
+  height: 8px;
+  align-self: center;
+  margin-left: 16px;
+  border-radius: 8px;
+}
