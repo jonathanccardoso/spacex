@@ -48,7 +48,7 @@ function App() {
       <div className="container mx-auto px-20 bg-white">
         <h1 className="text-3xl font-black pt-4">Missions</h1>
         <div className="flex flex-wrap flex-grow flex-cols-1 lg:flex-2 content-between items-center justify-center">
-          {data.launchesPast.map(
+          {data?.launchesPast.map(
             ({ id, mission_name, details, launch_date_local }) => (
               <div
                 key={id}
